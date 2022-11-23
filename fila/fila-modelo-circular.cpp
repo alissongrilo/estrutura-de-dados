@@ -70,22 +70,6 @@ Dado filaCircular::desenfileira() {
 }
 
 int main() {
-    filaCircular f1(12);
-    int num;
-
-    for (unsigned i = 0; i < 8; i++) {
-        cin>>num;
-        f1.enfileira(num);
-    }
-
-    cout<<"tamanho: "<<f1.tamanho()<<endl;
-
-    cout<<"desenfileirando 5 elementos: ";
-
-    for (unsigned i = 0; i < 5; i++) {
-        cout<<f1.desenfileira()<<" ";
-    }
-    cout<<endl;
-
-    f1.~filaCircular();
+    //Implementar da maneira desejada
+    return 0;
 }
