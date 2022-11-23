@@ -13,10 +13,8 @@ class filaCircular {
     public:
         filaCircular(int capacidade = 10);
         ~filaCircular();
-        unsigned tamanho();
         void enfileira(Dado valor);
         Dado desenfileira();
-        bool vazia();
         Dado pegaInicio();
 };
 
@@ -30,14 +28,6 @@ filaCircular::filaCircular(int capacidade) {
 
 filaCircular::~filaCircular() {
     delete [] mDados;
-}
-
-unsigned filaCircular::tamanho() {
-    return mTamanho;
-}
-
-bool filaCircular::vazia() {
-    return (mTamanho == 0);
 }
 
 void filaCircular::enfileira(Dado valor) {
